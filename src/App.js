@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase';
 import Login from './Login';
-import Dashboard from './Dashboard';
+import DashboardRouter from './DashboardRouter'; // Updated import
 import './App.css';
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
           />
           <Route
             path="/dashboard"
-            element={user ? <Dashboard /> : <Navigate to="/login" />}
+            element={user ? <DashboardRouter /> : <Navigate to="/login" />}
           />
           <Route path="/" element={<Navigate to="/login" />} />
         </Routes>

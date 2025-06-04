@@ -7,7 +7,7 @@
 }
 
 .login, .dashboard {
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
@@ -49,8 +49,33 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  margin-top: 10px;
 }
 
 .login form button:hover, .dashboard button:hover {
   background-color: #0d74d4;
+}
+
+.dashboard ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.dashboard ul li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.dashboard ul li:last-child {
+  border-bottom: none;
+}
+
+.dashboard ul li a {
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+.dashboard ul li a:hover {
+  text-decoration: underline;
 }
